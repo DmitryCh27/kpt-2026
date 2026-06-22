@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Держать язык за зубами</title>
+    <title>Композиция и постановка танца — постановки групп 296 и 388</title>
     <meta
       name="description"
-      content="Одностраничная визитка постановки «Держать язык за зубами» с либретто и авторами."
+      content="Витрина танцевальных постановок по дисциплине «Композиция и постановка танца». Группы 296 и 388. Преподаватель Абдрахимова Энже Альбертовна."
     >
     <style>
       :root {
@@ -17,8 +17,6 @@
         --line: rgba(255, 255, 255, 0.14);
         --accent: #d01d24;
         --accent-dark: #8d1118;
-        --ink: #111113;
-        --paper: #f3eee7;
         --max: 1160px;
       }
 
@@ -46,44 +44,6 @@
       a {
         color: inherit;
         text-decoration: none;
-      }
-
-      .page {
-        overflow: hidden;
-        background:
-          linear-gradient(180deg, rgba(11, 11, 13, 0) 0%, var(--bg) 92vh),
-          var(--bg);
-      }
-
-      .hero {
-        position: relative;
-        height: clamp(300px, 50vh, 540px);
-        isolation: isolate;
-        background-image:
-          linear-gradient(180deg, rgba(11, 11, 13, 0.55) 0%, rgba(11, 11, 13, 0) 24%, rgba(11, 11, 13, 0) 62%, var(--bg) 100%),
-          url("Общее фото.jpg");
-        background-size: cover;
-        background-position: center 28%;
-      }
-
-      .hero::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        height: 4px;
-        background: linear-gradient(90deg, var(--accent), transparent 72%);
-      }
-
-      .hero-intro {
-        background: var(--bg);
-        padding: 26px 0 14px;
-      }
-
-      .hero-intro__inner {
-        width: min(var(--max), calc(100% - 32px));
-        margin: 0 auto;
       }
 
       .nav {
@@ -126,90 +86,27 @@
         flex: 0 0 auto;
       }
 
-      .nav__links {
-        display: flex;
-        align-items: center;
-        gap: 22px;
+      .nav__meta {
         color: var(--muted);
-        font-size: 0.92rem;
+        font-size: 0.84rem;
+        text-align: right;
       }
 
-      .nav__links a {
-        transition: color 0.2s ease;
+      .hero {
+        position: relative;
+        padding: 132px 0 38px;
+        isolation: isolate;
+        overflow: hidden;
       }
 
-      .nav__links a:hover {
-        color: var(--text);
-      }
-
-      .eyebrow {
-        margin: 0 0 14px;
-        color: var(--accent);
-        font-size: 0.82rem;
-        font-weight: 900;
-        letter-spacing: 0.18em;
-        text-transform: uppercase;
-      }
-
-      h1,
-      h2,
-      h3,
-      p {
-        margin-top: 0;
-      }
-
-      h1 {
-        max-width: 760px;
-        margin-bottom: 14px;
-        font-size: clamp(2.3rem, 5vw, 4rem);
-        line-height: 1;
-        font-weight: 900;
-      }
-
-      .lead {
-        max-width: 620px;
-        margin-bottom: 20px;
-        color: rgba(244, 241, 237, 0.84);
-        font-size: clamp(1rem, 1.5vw, 1.18rem);
-      }
-
-      .actions {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 12px;
-      }
-
-      .button {
-        min-height: 48px;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-        padding: 12px 18px;
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        border-radius: 6px;
-        color: var(--text);
-        font-weight: 800;
-        transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
-      }
-
-      .button:hover {
-        transform: translateY(-2px);
-      }
-
-      .button--primary {
-        border-color: var(--accent);
-        background: var(--accent);
-      }
-
-      .button--ghost:hover {
-        border-color: rgba(255, 255, 255, 0.42);
-        background: rgba(255, 255, 255, 0.08);
-      }
-
-      section {
-        padding: 38px 0;
-        scroll-margin-top: 98px;
+      .hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: -2;
+        background:
+          radial-gradient(120% 90% at 82% -10%, rgba(208, 29, 36, 0.28), transparent 52%),
+          linear-gradient(180deg, #131316 0%, var(--bg) 100%);
       }
 
       .wrap {
@@ -217,674 +114,242 @@
         margin: 0 auto;
       }
 
-      .section-head {
-        display: grid;
-        grid-template-columns: 0.72fr 1fr;
-        gap: 34px;
-        align-items: start;
-        margin-bottom: 26px;
+      .eyebrow {
+        margin: 0 0 16px;
+        color: var(--accent);
+        font-size: 0.82rem;
+        font-weight: 900;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
       }
 
-      h2 {
-        margin-bottom: 0;
-        font-size: clamp(2rem, 4vw, 4rem);
-        line-height: 0.98;
-      }
-
-      .section-head p {
-        color: var(--muted);
-        font-size: 1.08rem;
-      }
-
-      .stats {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        border-top: 1px solid var(--line);
-        border-bottom: 1px solid var(--line);
-      }
-
-      .stat {
-        padding: 16px 18px;
-        border-right: 1px solid var(--line);
-      }
-
-      .stat:last-child {
-        border-right: 0;
-      }
-
-      .stat strong {
-        display: block;
-        margin-bottom: 6px;
-        color: var(--text);
-        font-size: clamp(2rem, 4vw, 3.4rem);
-        line-height: 1;
-      }
-
-      .stat span {
-        color: var(--muted);
-      }
-
-      .services {
-        background: var(--paper);
-        color: var(--ink);
-      }
-
-      .about {
-        padding-top: 28px;
-      }
-
-      .services .section-head p {
-        color: #5e5750;
-      }
-
-      .service-grid {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 14px;
-      }
-
-      .service {
-        min-height: 138px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 20px;
-        border: 1px solid rgba(17, 17, 19, 0.14);
-        border-radius: 8px;
-        background: #fffaf3;
-      }
-
-      .service__number {
-        color: var(--accent-dark);
+      h1 {
+        max-width: 880px;
+        margin: 0 0 18px;
+        font-size: clamp(2.2rem, 5.4vw, 4.4rem);
+        line-height: 1.02;
         font-weight: 900;
       }
 
-      .service h3 {
-        margin-bottom: 12px;
-        font-size: 1.38rem;
-        line-height: 1.08;
+      .hero__lead {
+        max-width: 640px;
+        margin: 0 0 26px;
+        color: rgba(244, 241, 237, 0.84);
+        font-size: clamp(1rem, 1.5vw, 1.18rem);
       }
 
-      .service p {
-        margin-bottom: 0;
-        color: #5e5750;
-      }
-
-      .portfolio {
-        background: var(--bg-soft);
-      }
-
-      .portfolio__layout {
+      .meta-grid {
         display: grid;
-        grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
-        gap: 26px;
-        align-items: center;
-      }
-
-      .photo-frame {
-        overflow: hidden;
-        border-radius: 8px;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1px;
         border: 1px solid var(--line);
-        aspect-ratio: 16 / 10;
-        background: #050506;
-      }
-
-      .photo-frame img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-      }
-
-      .list {
-        display: grid;
-        gap: 12px;
-      }
-
-      .list-item {
-        padding: 0 0 12px;
-        border-bottom: 1px solid var(--line);
-      }
-
-      .list-item h3 {
-        margin-bottom: 6px;
-        font-size: 1.2rem;
-      }
-
-      .list-item p {
-        margin-bottom: 0;
-        color: var(--muted);
-      }
-
-      .gallery {
-        position: relative;
-        padding: 34px 0;
-        color: #101012;
-        background: #f7f7f4;
-      }
-
-      .gallery .section-head {
-        max-width: 760px;
-        display: block;
-        margin: 0 auto 18px;
-        text-align: center;
-      }
-
-      .gallery .section-head p {
-        max-width: 620px;
-        margin: 10px auto 0;
-        color: #575757;
-      }
-
-      .gallery-shell {
-        max-width: 960px;
-        margin: 0 auto;
-      }
-
-      .carousel {
-        min-width: 0;
-      }
-
-      .carousel__stage {
-        position: relative;
-        min-height: 250px;
+        border-radius: 10px;
         overflow: hidden;
-        isolation: isolate;
-        cursor: zoom-in;
-        touch-action: pan-y;
-        outline: none;
+        background: var(--line);
       }
 
-      .carousel__slides {
+      .meta-grid > div {
+        padding: 16px 18px;
+        background: var(--bg);
+      }
+
+      .meta-grid dt {
+        margin-bottom: 6px;
+        color: var(--muted);
+        font-size: 0.78rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+
+      .meta-grid dd {
+        margin: 0;
+        font-size: 1.06rem;
+        font-weight: 700;
+      }
+
+      .shows {
+        padding: 30px 0 56px;
+      }
+
+      .shows__head {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 16px;
+        margin-bottom: 22px;
+      }
+
+      .shows__head h2 {
+        margin: 0;
+        font-size: clamp(1.5rem, 3vw, 2.2rem);
+      }
+
+      .shows__head span {
+        color: var(--muted);
+        font-size: 0.95rem;
+        white-space: nowrap;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+      }
+
+      .card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        aspect-ratio: 4 / 5;
+        overflow: hidden;
+        border-radius: 14px;
+        border: 1px solid var(--line);
+        background: var(--bg-soft);
+        isolation: isolate;
+        transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+      }
+
+      a.card:hover {
+        transform: translateY(-4px);
+        border-color: rgba(208, 29, 36, 0.7);
+        box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
+      }
+
+      .card__media {
         position: absolute;
         inset: 0;
+        z-index: -2;
       }
 
-      .carousel__slide {
-        position: absolute;
-        top: 14px;
-        left: 50%;
-        width: min(46vw, 440px);
-        aspect-ratio: 16 / 9;
-        overflow: hidden;
-        display: grid;
-        place-items: center;
-        border-radius: 24px;
-        opacity: 0;
-        box-shadow: 0 26px 70px rgba(16, 16, 18, 0.18);
-        transform: translateX(-50%) scale(0.72);
-        transition:
-          opacity 0.46s ease,
-          transform 0.56s cubic-bezier(0.2, 0.78, 0.2, 1),
-          filter 0.46s ease;
-        pointer-events: none;
-      }
-
-      .carousel__slide img {
+      .card__media img {
         width: 100%;
         height: 100%;
         object-fit: cover;
+        transition: transform 0.5s ease;
       }
 
-      .carousel__slide.is-active {
-        z-index: 6;
-        opacity: 1;
-        transform: translateX(-50%) scale(1);
-        pointer-events: auto;
+      a.card:hover .card__media img {
+        transform: scale(1.06);
       }
 
-      .carousel__slide.is-active img {
-        animation: subtle-photo-drift 4.8s ease-out both;
+      .card::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        background: linear-gradient(180deg, rgba(11, 11, 13, 0.05) 0%, rgba(11, 11, 13, 0.2) 42%, rgba(11, 11, 13, 0.92) 100%);
       }
 
-      .carousel__slide.is-prev {
-        z-index: 4;
-        opacity: 0.78;
-        filter: saturate(0.82) brightness(0.9);
-        transform: translateX(calc(-50% - min(20vw, 235px))) scale(0.78);
-      }
-
-      .carousel__slide.is-next {
-        z-index: 4;
-        opacity: 0.78;
-        filter: saturate(0.82) brightness(0.9);
-        transform: translateX(calc(-50% + min(20vw, 235px))) scale(0.78);
-      }
-
-      .carousel__slide.is-prev-2 {
-        z-index: 2;
-        opacity: 0.42;
-        filter: saturate(0.65) brightness(1.04);
-        transform: translateX(calc(-50% - min(31vw, 360px))) scale(0.58);
-      }
-
-      .carousel__slide.is-next-2 {
-        z-index: 2;
-        opacity: 0.42;
-        filter: saturate(0.65) brightness(1.04);
-        transform: translateX(calc(-50% + min(31vw, 360px))) scale(0.58);
-      }
-
-      .carousel.has-three .carousel__slide.is-prev-2,
-      .carousel.has-three .carousel__slide.is-next-2 {
-        opacity: 0;
-      }
-
-      .gallery-placeholder {
-        width: 100%;
-        height: 100%;
-        display: grid;
-        place-items: center;
-        padding: 32px;
-        color: #141416;
-        text-align: center;
+      .card__media--empty {
         background:
-          linear-gradient(135deg, rgba(208, 29, 36, 0.22), transparent 42%),
-          linear-gradient(90deg, #ece9e4, #d9d5ce);
+          radial-gradient(120% 90% at 20% 0%, rgba(208, 29, 36, 0.18), transparent 55%),
+          linear-gradient(160deg, #1b1b1f 0%, #121216 100%);
       }
 
-      .gallery-placeholder strong {
-        display: block;
-        margin-bottom: 8px;
-        font-size: clamp(2.4rem, 8vw, 6.4rem);
-        line-height: 1;
-      }
-
-      .carousel__slide:not(.is-active) .gallery-placeholder {
-        color: rgba(20, 20, 22, 0.14);
-      }
-
-      .carousel__slide:not(.is-active) .gallery-placeholder span {
-        opacity: 0.52;
-      }
-
-      .carousel__slide:not(.is-active) .gallery-placeholder {
-        font-size: 0;
-      }
-
-      .carousel__slide:not(.is-active) .gallery-placeholder strong {
-        margin-bottom: 0;
-        font-size: clamp(2.8rem, 7vw, 5.4rem);
-      }
-
-      .carousel__shade {
-        display: none;
-      }
-
-      .carousel__caption h3 {
-        margin-bottom: 4px;
-        font-size: 1rem;
-        line-height: 1.2;
-      }
-
-      .carousel__caption p {
-        margin-bottom: 0;
-        color: #6c6c6c;
-        font-size: 0.94rem;
-      }
-
-      .carousel__count {
-        display: none;
-      }
-
-      .carousel__controls {
+      .card__top {
         display: flex;
         align-items: center;
-        justify-content: center;
-        gap: 18px;
-        margin-top: 12px;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 16px 16px 0;
       }
 
-      .icon-button {
-        width: 34px;
-        height: 34px;
-        display: inline-grid;
-        place-items: center;
-        border: 0;
-        border-radius: 50%;
-        color: #777;
-        background: transparent;
-        cursor: pointer;
-        transition: color 0.2s ease, transform 0.2s ease;
+      .card__num {
+        font-size: 0.82rem;
+        font-weight: 900;
+        letter-spacing: 0.08em;
+        color: rgba(244, 241, 237, 0.7);
       }
 
-      .icon-button:hover,
-      .icon-button:focus-visible {
-        color: #5c48f2;
-        transform: scale(1.08);
-        outline: none;
-      }
-
-      .carousel__play {
-        width: auto;
-        min-width: 72px;
-        padding: 0 10px;
+      .badge {
+        padding: 4px 10px;
         border-radius: 999px;
-        color: #666;
-        font-size: 0.78rem;
+        font-size: 0.72rem;
+        font-weight: 800;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+
+      .badge--ready {
+        color: #fff;
+        background: var(--accent);
+      }
+
+      .badge--soon {
+        color: var(--muted);
+        border: 1px solid var(--line);
+      }
+
+      .card__body {
+        margin-top: auto;
+        padding: 16px;
+      }
+
+      .card__title {
+        margin: 0 0 6px;
+        font-size: 1.32rem;
+        line-height: 1.1;
         font-weight: 800;
       }
 
-      .carousel__progress {
-        display: none;
-        width: min(320px, 76vw);
-        height: 3px;
-        margin: 16px auto 0;
-        overflow: hidden;
-        border-radius: 999px;
-        background: #dedede;
-      }
-
-      .carousel__progress span {
-        display: none;
-      }
-
-      .carousel__timer {
-        display: block;
-        height: 100%;
-        width: 0;
-        border-radius: inherit;
-        background: #5c48f2;
-      }
-
-      .carousel.is-playing .carousel__timer {
-        animation: timer-fill 4.8s linear forwards;
-      }
-
-      .thumbs {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-      }
-
-      .thumb {
-        width: 8px;
-        height: 8px;
-        padding: 0;
-        border: 0;
-        border-radius: 50%;
-        background: #cfcfcf;
-        cursor: pointer;
-        transition: background 0.2s ease, transform 0.2s ease;
-      }
-
-      .thumb.is-active,
-      .thumb:focus-visible {
-        background: #5c48f2;
-        transform: scale(1.3);
-        outline: none;
-      }
-
-      .thumb img,
-      .thumb__empty {
-        display: none;
-      }
-
-      .lightbox {
-        position: fixed;
-        inset: 0;
-        z-index: 80;
-        display: none;
-        place-items: center;
-        padding: 24px;
-        background: rgba(5, 5, 6, 0.92);
-      }
-
-      .lightbox.is-open {
-        display: grid;
-      }
-
-      .lightbox__figure {
-        width: min(1120px, 100%);
-        max-height: 90vh;
+      .card__desc {
         margin: 0;
-        display: grid;
-        gap: 14px;
+        color: rgba(244, 241, 237, 0.78);
+        font-size: 0.95rem;
       }
 
-      .lightbox__media {
-        overflow: hidden;
-        display: grid;
-        place-items: center;
-        border-radius: 12px;
-        background: #111113;
+      .card--soon .card__title {
+        color: rgba(244, 241, 237, 0.62);
       }
 
-      .lightbox__media img {
-        max-width: 100%;
-        max-height: 78vh;
-        object-fit: contain;
-      }
-
-      .lightbox__placeholder {
-        width: min(900px, 86vw);
-        min-height: min(520px, 66vh);
-        display: grid;
-        place-items: center;
-        color: var(--text);
-        text-align: center;
-        background:
-          linear-gradient(135deg, rgba(208, 29, 36, 0.26), transparent 42%),
-          #151518;
-      }
-
-      .lightbox__placeholder strong {
-        display: block;
-        margin-bottom: 8px;
-        font-size: clamp(3rem, 12vw, 8rem);
-        line-height: 1;
-      }
-
-      .lightbox__caption {
-        margin: 0;
-        color: rgba(244, 241, 237, 0.82);
-        text-align: center;
-      }
-
-      .lightbox__close {
-        position: fixed;
-        top: 18px;
-        right: 18px;
-        z-index: 81;
-      }
-
-      @keyframes subtle-photo-drift {
-        0% {
-          transform: scale(1.01);
-        }
-
-        100% {
-          transform: scale(1.06);
-        }
-      }
-
-      @keyframes timer-fill {
-        from {
-          width: 0;
-        }
-
-        to {
-          width: 100%;
-        }
-      }
-
-      .contact {
-        padding-bottom: 24px;
-      }
-
-      .contact__box {
-        display: grid;
-        grid-template-columns: 1fr auto;
-        gap: 28px;
+      .card__cta {
+        display: inline-flex;
         align-items: center;
-        padding: 24px 0;
-        border-top: 1px solid var(--line);
-        border-bottom: 1px solid var(--line);
-      }
-
-      .contact h2 {
-        margin-bottom: 14px;
-      }
-
-      .contact p {
-        max-width: 640px;
-        margin-bottom: 0;
-        color: var(--muted);
+        gap: 7px;
+        margin-top: 12px;
+        color: #fff;
+        font-weight: 800;
+        font-size: 0.92rem;
       }
 
       .footer {
         width: min(var(--max), calc(100% - 32px));
         margin: 0 auto;
-        padding: 16px 0 22px;
+        padding: 22px 0 30px;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
-        gap: 18px;
+        gap: 12px;
+        border-top: 1px solid var(--line);
         color: rgba(244, 241, 237, 0.55);
         font-size: 0.9rem;
       }
 
       @media (max-width: 820px) {
-        .nav__inner {
-          height: 62px;
-        }
-
-        .nav__links {
-          gap: 13px;
-          font-size: 0.84rem;
-        }
-
-        .hero {
-          height: clamp(300px, 46vh, 460px);
-          background-image:
-            linear-gradient(180deg, rgba(11, 11, 13, 0.6) 0%, rgba(11, 11, 13, 0) 26%, rgba(11, 11, 13, 0) 58%, var(--bg) 100%),
-            url("Общее фото.jpg");
-          background-position: center 24%;
-        }
-
-        .hero-intro {
-          padding-top: 22px;
-        }
-
-        .section-head,
-        .portfolio__layout,
-        .gallery-shell,
-        .contact__box {
-          grid-template-columns: 1fr;
-        }
-
-        .stats {
-          grid-template-columns: repeat(3, 1fr);
-        }
-
-        .service-grid {
+        .grid {
           grid-template-columns: repeat(2, 1fr);
         }
 
-        .stat {
-          padding: 14px 10px;
-          border-right: 1px solid var(--line);
-          border-bottom: 0;
-        }
-
-        .stat strong {
-          font-size: 1.7rem;
-        }
-
-        .stat span {
-          font-size: 0.86rem;
-        }
-
-        .stat:last-child {
-          border-right: 0;
+        .nav__meta {
+          display: none;
         }
       }
 
-      @media (max-width: 560px) {
-        .brand {
-          font-size: 0.76rem;
+      @media (max-width: 540px) {
+        .hero {
+          padding-top: 110px;
         }
 
-        h1 {
-          font-size: clamp(2.35rem, 13.5vw, 3.9rem);
+        .meta-grid {
+          grid-template-columns: 1fr;
         }
 
-        section {
-          padding: 32px 0;
+        .grid {
+          grid-template-columns: 1fr;
         }
 
-        .section-head {
-          gap: 18px;
-          margin-bottom: 20px;
-        }
-
-        .button {
-          width: 100%;
-        }
-
-        .carousel__stage {
-          min-height: 250px;
-        }
-
-        .carousel__slide {
-          top: 46px;
-          width: min(78vw, 310px);
-          border-radius: 18px;
-        }
-
-        .carousel__slide.is-prev {
-          transform: translateX(calc(-50% - 34vw)) scale(0.7);
-        }
-
-        .carousel__slide.is-next {
-          transform: translateX(calc(-50% + 34vw)) scale(0.7);
-        }
-
-        .carousel__slide.is-prev-2,
-        .carousel__slide.is-next-2 {
-          opacity: 0;
-        }
-
-        .carousel__shade {
-          padding: 0 10px;
-        }
-
-        .carousel__caption p {
-          font-size: 0.92rem;
-        }
-
-        .carousel__controls {
-          margin-top: 14px;
-          flex-wrap: wrap;
-          gap: 12px;
-        }
-
-        .thumbs {
-          gap: 7px;
-        }
-
-        .carousel__play {
-          min-width: 72px;
-          height: 38px;
-          flex: 0 0 auto;
-        }
-
-        .icon-button {
-          width: 42px;
-          height: 42px;
-        }
-
-        .service-grid {
-          grid-template-columns: repeat(2, 1fr);
-        }
-
-        .service {
-          min-height: 116px;
-          padding: 16px;
-        }
-
-        .service h3 {
-          font-size: 1.05rem;
+        .card {
+          aspect-ratio: 16 / 11;
         }
 
         .footer {
@@ -894,486 +359,119 @@
     </style>
   </head>
   <body>
-    <div class="page">
-      <header class="nav" aria-label="Основная навигация">
-        <div class="nav__inner">
-          <a class="brand" href="#top" aria-label="На начало страницы">
-            <span class="brand__mark" aria-hidden="true"></span>
-            <span>Держать язык</span>
-          </a>
-          <nav class="nav__links" aria-label="Разделы страницы">
-            <a href="#about">Либретто</a>
-            <a href="#work">Авторы</a>
-            <a href="#gallery">Галерея</a>
-          </nav>
+    <header class="nav" aria-label="Основная навигация">
+      <div class="nav__inner">
+        <a class="brand" href="index.html" aria-label="На главную">
+          <span class="brand__mark" aria-hidden="true"></span>
+          <span>Постановки танца</span>
+        </a>
+        <div class="nav__meta">
+          Группы 296 и 388 · Абдрахимова Э. А.
         </div>
-      </header>
+      </div>
+    </header>
 
-      <main id="top">
-        <section class="hero" aria-label="Постановка Держать язык за зубами"></section>
-
-        <section class="hero-intro" aria-label="О постановке">
-          <div class="hero-intro__inner">
-            <p class="eyebrow">постановка · секрет · молчание</p>
-            <h1>Держать язык за зубами</h1>
-            <div class="actions" aria-label="Основные действия">
-              <a class="button button--ghost" href="#work">Постановщики</a>
+    <main>
+      <section class="hero" aria-label="О дисциплине">
+        <div class="wrap">
+          <p class="eyebrow">учебная дисциплина</p>
+          <h1>Композиция и&nbsp;постановка танца</h1>
+          <p class="hero__lead">
+            Показ авторских танцевальных постановок студентов. Каждая постановка —
+            отдельная работа со своим замыслом, образом и сценой.
+          </p>
+          <dl class="meta-grid">
+            <div>
+              <dt>Группы</dt>
+              <dd>296 и 388</dd>
             </div>
+            <div>
+              <dt>Преподаватель</dt>
+              <dd>Абдрахимова Энже Альбертовна</dd>
+            </div>
+            <div>
+              <dt>Постановок</dt>
+              <dd>11</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="shows" aria-labelledby="shows-title">
+        <div class="wrap">
+          <div class="shows__head">
+            <h2 id="shows-title">Постановки</h2>
+            <span>1 опубликована · 10 готовятся</span>
           </div>
-        </section>
+          <div class="grid" id="shows-grid"></div>
+        </div>
+      </section>
+    </main>
 
-        <section id="about" class="about">
-          <div class="wrap">
-            <div class="section-head">
-              <h2>Либретто</h2>
-              <p>
-                Человек узнавший секрет теряет покой. Он будет бороться с желанием
-                выкрикнуть и необходимостью смолчать. Теперь его главная задача —
-                держать язык за зубами.
-              </p>
-            </div>
-            <div class="stats" aria-label="Ключевые факты">
-              <div class="stat">
-                <strong>01</strong>
-                <span>секрет нарушает внутреннее равновесие</span>
-              </div>
-              <div class="stat">
-                <strong>02</strong>
-                <span>желание выкрикнуть сталкивается с молчанием</span>
-              </div>
-              <div class="stat">
-                <strong>03</strong>
-                <span>главная задача — удержать слова внутри</span>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="work" class="services">
-          <div class="wrap">
-            <div class="section-head">
-              <h2>Постановщики</h2>
-              <p>
-                Над постановкой работали четыре автора. Визуальный образ строится
-                на напряжении, красном акценте и физическом ощущении несказанного.
-              </p>
-            </div>
-            <div class="service-grid">
-              <article class="service">
-                <span class="service__number">01</span>
-                <div>
-                  <h3>Богданова Анастасия</h3>
-                  <p>Постановщик</p>
-                </div>
-              </article>
-              <article class="service">
-                <span class="service__number">02</span>
-                <div>
-                  <h3>Чунина Дарья</h3>
-                  <p>Постановщик</p>
-                </div>
-              </article>
-              <article class="service">
-                <span class="service__number">03</span>
-                <div>
-                  <h3>Рафаелян Наринэ</h3>
-                  <p>Постановщик</p>
-                </div>
-              </article>
-              <article class="service">
-                <span class="service__number">04</span>
-                <div>
-                  <h3>Скоп Таисия</h3>
-                  <p>Постановщик</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section id="gallery" class="gallery" aria-labelledby="gallery-title">
-          <div class="wrap">
-            <div class="section-head">
-              <h2 id="gallery-title">Галерея танца</h2>
-              <p>
-                Серия кадров раскрывает состояние человека, который знает секрет и пытается
-                удержать его внутри: от первого напряжения до почти сорвавшегося крика.
-              </p>
-            </div>
-
-            <div class="gallery-shell">
-              <div
-                class="carousel"
-                role="region"
-                aria-roledescription="carousel"
-                aria-labelledby="gallery-title"
-              >
-                <div class="carousel__stage" tabindex="0" aria-label="Фотографии постановки">
-                  <div class="carousel__slides" aria-live="polite"></div>
-                </div>
-                <div class="carousel__shade">
-                  <div class="carousel__caption">
-                    <h3></h3>
-                    <p></p>
-                  </div>
-                  <div class="carousel__count" aria-live="polite">01 / 15</div>
-                </div>
-                <div class="carousel__controls" aria-label="Управление галереей">
-                  <button class="icon-button carousel__prev" type="button" aria-label="Предыдущее фото">
-                    &#8592;
-                  </button>
-                  <div class="thumbs" role="group" aria-label="Выбор фотографии"></div>
-                  <button class="icon-button carousel__next" type="button" aria-label="Следующее фото">
-                    &#8594;
-                  </button>
-                  <button class="icon-button carousel__play" type="button" aria-label="Остановить анимацию">
-                    Пауза
-                  </button>
-                </div>
-                <div class="carousel__progress" aria-hidden="true">
-                  <span></span>
-                  <i class="carousel__timer"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-      </main>
-
-      <footer class="footer">
-        <span>© 2026 «Держать язык за зубами»</span>
-        <span>Танцевальная постановка</span>
-      </footer>
-    </div>
-
-    <div class="lightbox" aria-modal="true" role="dialog" aria-label="Просмотр фото">
-      <button class="icon-button lightbox__close" type="button" aria-label="Закрыть фото">
-        &#215;
-      </button>
-      <figure class="lightbox__figure">
-        <div class="lightbox__media"></div>
-        <figcaption class="lightbox__caption"></figcaption>
-      </figure>
-    </div>
+    <footer class="footer">
+      <span>© 2026 · Композиция и постановка танца</span>
+      <span>Группы 296 и 388 · преп. Абдрахимова Э. А.</span>
+    </footer>
 
     <script>
-      // Add real dance photos by setting src, for example: { src: "photo-02.jpg", title: "...", description: "..." }.
-      const galleryItems = [
+      // Чтобы добавить новую постановку: задайте title, description, cover (путь к фото) и href (страница).
+      // Для ещё не готовых постановок оставьте status: "soon".
+      const shows = [
         {
-          src: "Общее фото.jpg",
-          title: "Общий образ",
-          description: "Первый визуальный ключ постановки: красный акцент, молчание и напряжение."
-        },
-        { title: "Кадр 02", description: "Момент внутреннего напряжения." },
-        { title: "Кадр 03", description: "Пауза перед несказанным словом." }
+          title: "Держать язык за зубами",
+          description: "Человек узнал секрет и борется между желанием выкрикнуть и необходимостью смолчать.",
+          cover: "Общее фото.jpg",
+          href: "derzhat-yazyk-za-zubami.html",
+          status: "ready"
+        }
       ];
 
-      const gallery = document.querySelector(".carousel");
-      const slidesRoot = document.querySelector(".carousel__slides");
-      const thumbsRoot = document.querySelector(".thumbs");
-      const captionTitle = document.querySelector(".carousel__caption h3");
-      const captionText = document.querySelector(".carousel__caption p");
-      const count = document.querySelector(".carousel__count");
-      const progress = document.querySelector(".carousel__progress span");
-      const playButton = document.querySelector(".carousel__play");
-      const stage = document.querySelector(".carousel__stage");
-      const lightbox = document.querySelector(".lightbox");
-      const lightboxMedia = document.querySelector(".lightbox__media");
-      const lightboxCaption = document.querySelector(".lightbox__caption");
-      const lightboxClose = document.querySelector(".lightbox__close");
-      const autoDelay = 4800;
-      let activeIndex = 0;
-      let touchStartX = 0;
-      let touchStartY = 0;
-      let pointerStartX = 0;
-      let pointerStartY = 0;
-      let pointerIsDown = false;
-      let mouseStartX = 0;
-      let mouseStartY = 0;
-      let mouseIsDown = false;
-      let lastTapAt = 0;
-      let autoTimer;
-      let isPlaying = true;
-      let userPaused = false;
+      const TOTAL = 11;
+      const grid = document.getElementById("shows-grid");
+      const pad = (n) => String(n).padStart(2, "0");
 
-      const pad = (number) => String(number).padStart(2, "0");
+      for (let i = 0; i < TOTAL; i += 1) {
+        const item = shows[i];
+        const num = pad(i + 1);
 
-      function restartTimerAnimation() {
-        gallery.classList.remove("is-playing");
-        window.requestAnimationFrame(() => {
-          if (isPlaying) {
-            gallery.classList.add("is-playing");
-          }
-        });
-      }
-
-      function scheduleNext() {
-        window.clearTimeout(autoTimer);
-        if (!isPlaying) {
-          return;
-        }
-
-        autoTimer = window.setTimeout(() => {
-          setActive(activeIndex + 1);
-        }, autoDelay);
-      }
-
-      function pauseAuto(isUserAction = true) {
-        isPlaying = false;
-        userPaused = isUserAction || userPaused;
-        window.clearTimeout(autoTimer);
-        gallery.classList.remove("is-playing");
-        playButton.textContent = "Пуск";
-        playButton.setAttribute("aria-label", "Запустить анимацию");
-      }
-
-      function playAuto(isUserAction = true) {
-        if (isUserAction) {
-          userPaused = false;
-        }
-
-        isPlaying = true;
-        playButton.textContent = "Пауза";
-        playButton.setAttribute("aria-label", "Остановить анимацию");
-        restartTimerAnimation();
-        scheduleNext();
-      }
-
-      function openLightbox(index = activeIndex) {
-        const item = galleryItems[index];
-        pauseAuto(false);
-        lightboxMedia.innerHTML = "";
-
-        if (item.src) {
-          const img = document.createElement("img");
-          img.src = item.src;
-          img.alt = item.title;
-          lightboxMedia.append(img);
+        if (item && item.status === "ready") {
+          const card = document.createElement("a");
+          card.className = "card card--ready";
+          card.href = item.href;
+          card.setAttribute("aria-label", `Постановка ${num}: ${item.title}`);
+          card.innerHTML = `
+            <div class="card__media">
+              <img src="${item.cover}" alt="${item.title}">
+            </div>
+            <div class="card__top">
+              <span class="card__num">№ ${num}</span>
+              <span class="badge badge--ready">Смотреть</span>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">${item.title}</h3>
+              <p class="card__desc">${item.description}</p>
+              <span class="card__cta">Открыть постановку →</span>
+            </div>
+          `;
+          grid.append(card);
         } else {
-          const placeholder = document.createElement("div");
-          placeholder.className = "lightbox__placeholder";
-          placeholder.innerHTML = `<span><strong>${pad(index + 1)}</strong>${item.description}</span>`;
-          lightboxMedia.append(placeholder);
+          const card = document.createElement("div");
+          card.className = "card card--soon";
+          card.setAttribute("aria-label", `Постановка ${num}: скоро`);
+          card.innerHTML = `
+            <div class="card__media card__media--empty"></div>
+            <div class="card__top">
+              <span class="card__num">№ ${num}</span>
+              <span class="badge badge--soon">Скоро</span>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Постановка ${num}</h3>
+              <p class="card__desc">Страница появится после публикации работы.</p>
+            </div>
+          `;
+          grid.append(card);
         }
-
-        lightboxCaption.textContent = `${item.title}. ${item.description}`;
-        lightbox.classList.add("is-open");
-        document.body.style.overflow = "hidden";
-        lightboxClose.focus();
       }
-
-      function closeLightbox() {
-        lightbox.classList.remove("is-open");
-        lightboxMedia.innerHTML = "";
-        document.body.style.overflow = "";
-        if (!userPaused) {
-          playAuto(false);
-        }
-        stage.focus();
-      }
-
-      function handleSwipe(deltaX, deltaY = 0) {
-        if (Math.abs(deltaX) > 44 && Math.abs(deltaX) > Math.abs(deltaY) * 1.25) {
-          setActive(activeIndex + (deltaX < 0 ? 1 : -1));
-          return true;
-        }
-
-        return false;
-      }
-
-      function handlePossibleDoubleTap(deltaX = 0, deltaY = 0) {
-        if (Math.abs(deltaX) > 12 || Math.abs(deltaY) > 12) {
-          return;
-        }
-
-        const now = Date.now();
-        if (now - lastTapAt < 320) {
-          openLightbox(activeIndex);
-          lastTapAt = 0;
-          return;
-        }
-
-        lastTapAt = now;
-      }
-
-      function renderGallery() {
-        gallery.classList.toggle("has-three", galleryItems.length === 3);
-
-        galleryItems.forEach((item, index) => {
-          const slide = document.createElement("div");
-          slide.className = "carousel__slide";
-          slide.setAttribute("role", "group");
-          slide.setAttribute("aria-roledescription", "slide");
-          slide.setAttribute("aria-label", `${index + 1} из ${galleryItems.length}: ${item.title}`);
-
-          if (item.src) {
-            const img = document.createElement("img");
-            img.src = item.src;
-            img.alt = item.title;
-            slide.append(img);
-          } else {
-            const placeholder = document.createElement("div");
-            placeholder.className = "gallery-placeholder";
-            placeholder.innerHTML = `<span><strong>${pad(index + 1)}</strong>${item.description}</span>`;
-            slide.append(placeholder);
-          }
-
-          const thumb = document.createElement("button");
-          thumb.className = "thumb";
-          thumb.type = "button";
-          thumb.setAttribute("aria-label", `Показать ${item.title}`);
-          thumb.addEventListener("click", () => setActive(index));
-
-          if (item.src) {
-            const img = document.createElement("img");
-            img.src = item.src;
-            img.alt = "";
-            thumb.append(img);
-          } else {
-            const empty = document.createElement("span");
-            empty.className = "thumb__empty";
-            empty.textContent = pad(index + 1);
-            thumb.append(empty);
-          }
-
-          slidesRoot.append(slide);
-          thumbsRoot.append(thumb);
-        });
-
-        setActive(0);
-      }
-
-      function setActive(index) {
-        activeIndex = (index + galleryItems.length) % galleryItems.length;
-        const item = galleryItems[activeIndex];
-        const slides = slidesRoot.querySelectorAll(".carousel__slide");
-        const thumbs = thumbsRoot.querySelectorAll(".thumb");
-
-        slides.forEach((slide, slideIndex) => {
-          let offset = (slideIndex - activeIndex + galleryItems.length) % galleryItems.length;
-          if (offset > galleryItems.length / 2) {
-            offset -= galleryItems.length;
-          }
-
-          slide.classList.remove("is-active", "is-prev", "is-next", "is-prev-2", "is-next-2");
-          slide.classList.toggle("is-active", offset === 0);
-          slide.classList.toggle("is-prev", offset === -1);
-          slide.classList.toggle("is-next", offset === 1);
-          slide.classList.toggle("is-prev-2", offset === -2);
-          slide.classList.toggle("is-next-2", offset === 2);
-        });
-
-        thumbs.forEach((thumb, thumbIndex) => {
-          const isActive = thumbIndex === activeIndex;
-          thumb.classList.toggle("is-active", isActive);
-          thumb.setAttribute("aria-current", isActive ? "true" : "false");
-        });
-
-        captionTitle.textContent = item.title;
-        captionText.textContent = item.description;
-        count.textContent = `${pad(activeIndex + 1)} / ${galleryItems.length}`;
-        progress.style.width = `${((activeIndex + 1) / galleryItems.length) * 100}%`;
-        restartTimerAnimation();
-        scheduleNext();
-      }
-
-      document.querySelector(".carousel__prev").addEventListener("click", () => setActive(activeIndex - 1));
-      document.querySelector(".carousel__next").addEventListener("click", () => setActive(activeIndex + 1));
-      playButton.addEventListener("click", () => {
-        if (isPlaying) {
-          pauseAuto(true);
-        } else {
-          playAuto(true);
-        }
-      });
-
-      gallery.addEventListener("keydown", (event) => {
-        if (event.key === "ArrowLeft") {
-          event.preventDefault();
-          setActive(activeIndex - 1);
-        }
-
-        if (event.key === "ArrowRight") {
-          event.preventDefault();
-          setActive(activeIndex + 1);
-        }
-      });
-
-      stage.addEventListener("pointerdown", (event) => {
-        pointerIsDown = true;
-        pointerStartX = event.clientX;
-        pointerStartY = event.clientY;
-      });
-
-      stage.addEventListener("pointerup", (event) => {
-        if (!pointerIsDown) {
-          return;
-        }
-
-        pointerIsDown = false;
-        const deltaX = event.clientX - pointerStartX;
-        const deltaY = event.clientY - pointerStartY;
-        const didSwipe = handleSwipe(deltaX, deltaY);
-
-        if (!didSwipe && event.pointerType && event.pointerType !== "mouse") {
-          handlePossibleDoubleTap(deltaX, deltaY);
-        }
-      });
-
-      stage.addEventListener("pointercancel", () => {
-        pointerIsDown = false;
-      });
-
-      stage.addEventListener("mousedown", (event) => {
-        mouseIsDown = true;
-        mouseStartX = event.clientX;
-        mouseStartY = event.clientY;
-      });
-
-      stage.addEventListener("mouseup", (event) => {
-        if (!mouseIsDown) {
-          return;
-        }
-
-        mouseIsDown = false;
-        handleSwipe(event.clientX - mouseStartX, event.clientY - mouseStartY);
-      });
-
-      stage.addEventListener("mouseleave", () => {
-        mouseIsDown = false;
-      });
-
-      stage.addEventListener("touchstart", (event) => {
-        touchStartX = event.changedTouches[0].clientX;
-        touchStartY = event.changedTouches[0].clientY;
-      }, { passive: true });
-
-      stage.addEventListener("touchend", (event) => {
-        const deltaX = event.changedTouches[0].clientX - touchStartX;
-        const deltaY = event.changedTouches[0].clientY - touchStartY;
-        const didSwipe = handleSwipe(deltaX, deltaY);
-
-        if (!didSwipe) {
-          handlePossibleDoubleTap(deltaX, deltaY);
-        }
-      });
-
-      stage.addEventListener("dblclick", () => openLightbox(activeIndex));
-      lightboxClose.addEventListener("click", closeLightbox);
-      lightbox.addEventListener("click", (event) => {
-        if (event.target === lightbox) {
-          closeLightbox();
-        }
-      });
-
-      document.addEventListener("keydown", (event) => {
-        if (event.key === "Escape" && lightbox.classList.contains("is-open")) {
-          closeLightbox();
-        }
-      });
-
-      renderGallery();
     </script>
   </body>
 </html>
