@@ -297,6 +297,7 @@
         width: 100%;
         height: 100%;
         object-fit: contain;
+        padding: 46px 10px 58px;
       }
 
       .cf-slide__media--empty {
@@ -355,31 +356,41 @@
         background: var(--accent);
       }
 
-      .cf-collage {
+      .cf-thanks {
         position: absolute;
         inset: 0;
         z-index: -2;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-auto-rows: 1fr;
-        gap: 3px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+        text-align: center;
+        background:
+          radial-gradient(120% 80% at 50% 18%, rgba(208, 29, 36, 0.5), transparent 60%),
+          linear-gradient(160deg, #2a0810 0%, #160609 100%);
       }
 
-      .cf-collage__cell {
-        background-size: cover;
-        background-position: center;
-        filter: brightness(0.5) grayscale(0.15);
+      .cf-thanks__icon {
+        color: var(--accent);
+        font-size: 2rem;
+        margin-bottom: 6px;
+      }
+
+      .cf-thanks__big {
+        font-size: 2.1rem;
+        font-weight: 900;
+        line-height: 1;
+      }
+
+      .cf-thanks__sub {
+        color: rgba(244, 241, 237, 0.72);
+        font-size: 0.92rem;
+        letter-spacing: 0.04em;
       }
 
       .cf-slide--thanks::after {
-        background:
-          radial-gradient(circle at 50% 45%, rgba(11, 4, 7, 0.35), rgba(11, 4, 7, 0.86) 75%),
-          radial-gradient(120% 60% at 50% 0%, rgba(208, 29, 36, 0.35), transparent 60%);
-      }
-
-      .cf-slide--thanks .cf-slide__num {
-        color: var(--accent);
-        font-size: 1rem;
+        background: linear-gradient(180deg, rgba(11, 4, 7, 0) 64%, rgba(11, 4, 7, 0.85) 100%);
       }
 
       .cf-slide__title {
@@ -813,12 +824,14 @@
         slide.setAttribute("aria-label", `${i + 1} из ${TOTAL}: ${item.title}`);
         if (item.type === "thanks") {
           slide.classList.add("cf-slide--thanks");
-          const cells = items.filter((it) => it.cover).slice(0, 9)
-            .map((it) => `<div class="cf-collage__cell" style="background-image: url('${it.cover}')"></div>`).join("");
           slide.innerHTML = `
-            <div class="cf-collage">${cells}</div>
+            <div class="cf-thanks">
+              <span class="cf-thanks__icon">✦</span>
+              <span class="cf-thanks__big">Спасибо</span>
+              <span class="cf-thanks__sub">руководителю</span>
+            </div>
             <div class="cf-slide__top">
-              <span class="cf-slide__num">✦</span>
+              <span class="cf-slide__num"></span>
               <span class="badge badge--thanks">Спасибо</span>
             </div>
             <h3 class="cf-slide__title">${item.title}</h3>
