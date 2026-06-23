@@ -759,7 +759,7 @@
         <div class="wrap">
           <div class="shows__head">
             <h2 id="shows-title">Постановки</h2>
-            <span>14 постановок</span>
+            <span>15 постановок</span>
           </div>
         </div>
 
@@ -802,6 +802,7 @@
         { title: "Держать язык за зубами", description: "Человек узнал секрет и борется между желанием выкрикнуть и необходимостью смолчать.", cover: "Общее фото.jpg", href: "derzhat-yazyk-za-zubami.html", status: "ready" },
         { title: "Не коснись, а то скиснешь", description: "Кислотная горечь одного сознания может стать судьбой другого.", cover: "Не коснись, а то скиснешь/cover.jpg", href: "ne-kosnis.html", status: "ready" },
         { title: "Vigja", description: "Образы скандинавских шаманов, их культура и традиционные обряды.", cover: "Vigja/Vigja.jpg", href: "vigja.html", status: "ready" },
+        { title: "True believers", description: "Слепая преданность делу разрушает, если в ней нет выбора и смысла.", cover: "True believers/True believers.jpg", href: "true-believers.html", status: "ready" },
         { title: "Последняя капля", description: "Прежде чем спасать другого, осознай свою готовность.", cover: "Последняя капля/cover.jpg", href: "poslednyaya-kaplya.html", status: "ready" },
         { title: "Продажа воздуха", description: "Пока ты занят делом — у тебя уже минус… и даже кот не виноват!", cover: "Продажа воздуха/Продажа воздуха.jpg", href: "prodazha-vozduha.html", status: "ready" },
         { title: "Затмение", description: "Миг, когда небесные светила перекрывают друг друга и мир замирает в полумраке.", cover: "Затмение/cover.jpg", href: "zatmenie.html", status: "ready" },
@@ -891,7 +892,7 @@
         dots.forEach((dot, i) => dot.classList.toggle("is-active", i === active));
 
         const item = items[active];
-        capNum.textContent = item.type === "thanks" ? "Благодарность" : `№ ${pad(active + 1)} / 14`;
+        capNum.textContent = item.type === "thanks" ? "Благодарность" : `№ ${pad(active + 1)} / 15`;
         capTitle.textContent = item.title;
         capDesc.textContent = item.description;
         if (item.href) {
